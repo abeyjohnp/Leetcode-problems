@@ -1,0 +1,22 @@
+import java.util.Scanner;
+class twosum
+{
+    public static void main(String args[])
+    {
+        Scanner obj = new Scanner(System.in);
+        int a[]={3,2,4};
+        System.out.print("ENTER THE TARGET : ");
+        int target = obj.nextInt();
+        for (int i=0 ; i<a.length; i++)
+        {
+            for (int j=i+1 ; j<a.length ; j++)
+            {
+                if (a[i]+a[j]==target)
+                {
+                    System.out.print("["+i+","+j+"]");
+                    break;
+                }
+            }
+        }
+    }
+}
